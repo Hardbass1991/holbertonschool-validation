@@ -1,6 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Awesome Inc.'
-[module]
-  [[module.imports]]
-    path = "github.com/theNewDynamic/gohugo-theme-ananke"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
