@@ -14,5 +14,5 @@ clean: ## Delete the dist folder
 help: ## Print this help message
 	@echo "build: Build the website with the contents of the dist folder"
 	@echo "post: Create a new post"
-	@echo "clean: Delete the dist folder"
+	@echo "clean: Clean up the dist folder"
 	@echo "help: Print this help message"
