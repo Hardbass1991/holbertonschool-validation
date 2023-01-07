@@ -1,3 +1,4 @@
+---
 name: module3_task0
 on:
   push:
@@ -5,11 +6,10 @@ on:
     - cron: '12 ? * 1/1 *'    
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: clone repository
         uses: actions/checkout@v3
-
-      - name: test make help command
-        run: 
-          cd holbertonschool-validation/module3_task0
-          make help
+      
+      - name: test help command
+        run: make help
