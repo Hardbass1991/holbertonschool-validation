@@ -5,6 +5,7 @@ on:
     - cron: '12 ? * 1/1 *'    
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: clone repository
         uses: actions/checkout@v3
