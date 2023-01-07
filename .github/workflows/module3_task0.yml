@@ -1,3 +1,4 @@
+---
 name: module3_task0
 on:
   push:
@@ -12,5 +13,5 @@ jobs:
 
       - name: test make help command
         run: 
-          cd holbertonschool-validation/module3_task0
+          cd module3_task0
           make help
