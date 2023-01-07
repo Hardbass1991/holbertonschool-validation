@@ -2,7 +2,7 @@ name: module3_task0
 on:
   push:
   schedule:
-    - cron: '0 0 12 ? * 1/1 *'    
+    - cron: '12 ? * 1/1 *'
 jobs:
   job1:
     steps:
@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: test make help command
-        run: 
+        run:
           cd holbertonschool-validation/module3_task0
           make help
