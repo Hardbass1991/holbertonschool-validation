@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        uses: Hardbass1991/holbertonschool-validation
+        uses: actions/checkout@v3
 
       - name: cd
         run: cd holbertonschool-validation/module3_task0
