@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: clone repository
         uses: actions/checkout@v3
-
-      - name: cd
-        run: cd module3_task0
       
       - name: test help command
         run: make help
