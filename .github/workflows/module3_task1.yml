@@ -11,8 +11,20 @@ jobs:
       - name: clone repository
         uses: actions/checkout@v3
 
+      - name: cd to inner folder
+        run: cd module3_task1
+
       - name: setup up required tools
-        run: sudo module3_task1/./setup.sh
+        run: sudo ./setup.sh
+
+      - name: clean up
+        run: make clean
+
+      - name: print help
+        run: make help
 
       - name: test build command
         run: make build
+
+      - name: make a post
+        run: make post
