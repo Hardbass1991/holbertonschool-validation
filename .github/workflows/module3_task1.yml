@@ -15,7 +15,7 @@ jobs:
         run: cd module3_task1
 
       - name: setup up required tools
-        run: sudo ./setup.sh
+        run: chmod u+x setup.sh && sudo ./setup.sh
 
       - name: clean up
         run: make clean
