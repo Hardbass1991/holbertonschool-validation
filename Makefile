@@ -1,5 +1,5 @@
 build:## Build the website with the contents of the dist folder
-	hugo
+	hugo new site
 post: ## Create a new post
 	hugo new posts/${POST_NAME}.md
 	rm content/posts/${POST_NAME}.md
