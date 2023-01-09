@@ -21,7 +21,7 @@ jobs:
         run: make build
 
       - name: make a post
-        run: make post
+        run: cd dist && make post
 
       - name: clean up
         run: make clean
