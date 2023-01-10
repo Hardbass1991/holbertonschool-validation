@@ -1,5 +1,5 @@
 build:## Build the website with the contents of the dist folder
-	hugo new site dist
+	hugo
 post: ## Create a new post
 	hugo new posts/${POST_NAME}.md
 	rm content/posts/${POST_NAME}.md
@@ -12,7 +12,7 @@ post: ## Create a new post
 clean: ## Delete the dist folder
 	rm -R dist/*
 help: ## Print this help message
-	echo "build: Build the website with the contents of the dist folder"
+	@echo "build: Build the website with the contents of the dist folder"
 	@echo "post: Create a new post"
 	@echo "clean: Clean up the dist folder"
 	@echo "help: Print this help message"
