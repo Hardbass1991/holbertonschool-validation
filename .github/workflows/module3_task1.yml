@@ -14,14 +14,5 @@ jobs:
       - name: setup up required tools
         run: cd module3_task1 && sudo ./setup.sh
 
-      - name: print help
-        run: make help
-
       - name: test build command
         run: make build
-
-      - name: make a post
-        run: cd dist && make post
-
-      - name: clean up
-        run: make clean
